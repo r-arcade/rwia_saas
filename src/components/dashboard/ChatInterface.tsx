@@ -44,7 +44,7 @@ const ChatInterface = () => {
           <input
             type="text"
             value={inputValue}
-            onChange={(e) => setInputValue(e.e.target.value)}
+            onChange={(e) => setInputValue(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
             placeholder="Digite sua mensagem..."
             className="w-full px-3 py-2 bg-light-background dark:bg-dark-background border border-light-border dark:border-dark-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-fluid-sm text-light-foreground dark:text-dark-foreground"

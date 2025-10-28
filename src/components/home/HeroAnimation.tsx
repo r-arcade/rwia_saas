@@ -13,7 +13,12 @@ const benefits = [
 const totalPhases = 3 + benefits.length + 1;
 
 // --- Typewriter Component ---
-const TypewriterText = ({ text, className = "" }) => {
+interface TypewriterTextProps {
+  text: string;
+  className?: string;
+}
+
+const TypewriterText = ({ text, className = "" }: TypewriterTextProps) => {
   const characters = Array.from(text);
   const typingSpeed = 0.04;
   const containerVariants = {
